@@ -51,7 +51,7 @@ export const DemoWalkthroughModal: React.FC<DemoWalkthroughModalProps> = ({
     {
       num: 2,
       title: 'Automated Blocker Classification',
-      actor: 'RxBridge Workflow Engine',
+      actor: 'RxResolve Workflow Engine',
       desc: 'System detects zero refills remain and flags blocker: "Provider approval required". Prevents dead-end faxes and phone tag.',
       actionLabel: 'Open Refill Detail (#RF-10482)',
       action: () => {
@@ -90,7 +90,7 @@ export const DemoWalkthroughModal: React.FC<DemoWalkthroughModalProps> = ({
     {
       num: 5,
       title: 'Closed-Loop Resolution & Audit',
-      actor: 'RxBridge Integration Bus',
+      actor: 'RxResolve Integration Bus',
       desc: 'Prescription transmitted to pharmacy. Timeline, audit log, and tasks updated to RESOLVED. Zero patient friction.',
       actionLabel: 'Inspect Compliance Audit Trail',
       action: () => {

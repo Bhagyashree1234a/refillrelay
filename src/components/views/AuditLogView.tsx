@@ -52,7 +52,7 @@ export const AuditLogView: React.FC = () => {
             const encoded = encodeURI(csv);
             const a = document.createElement('a');
             a.href = encoded;
-            a.download = `rxbridge_audit_${Date.now()}.csv`;
+            a.download = `rxresolve_audit_${Date.now()}.csv`;
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);

@@ -56,7 +56,7 @@ export const DashboardView: React.FC = () => {
             <div>
               <div className="font-semibold text-sm">Pharmacy Gateway Degraded (NCPDP SCRIPT Gateway Timeout)</div>
               <div className="text-xs text-amber-700 mt-0.5">
-                Refills are safely buffered locally in RxBridge. No requests or provider interventions will be lost.
+                Refills are safely buffered locally in RxResolve. No requests or provider interventions will be lost.
               </div>
             </div>
           </div>

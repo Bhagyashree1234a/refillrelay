@@ -1,6 +1,6 @@
 {
-  "name": "RxBridge",
-  "description": "RxBridge is an enterprise healthcare refill coordination platform connecting pharmacy staff, practices, and providers to resolve stuck prescriptions with speed, visibility, and accountability.",
+  "name": "RxResolve",
+  "description": "RxResolve is an enterprise healthcare refill coordination platform connecting pharmacy staff, practices, and providers to resolve stuck prescriptions with speed, visibility, and accountability.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

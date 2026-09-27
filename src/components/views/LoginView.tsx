@@ -297,7 +297,7 @@ export const LoginView: React.FC<LoginViewProps> = ({ onSuccess }) => {
 
                 {/* Switch to Sign Up */}
                 <div className="text-center text-xs text-slate-500">
-                  New to RxBridge?{' '}
+                  New to RxResolve?{' '}
                   <button
                     type="button"
                     onClick={() => {

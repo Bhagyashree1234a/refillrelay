@@ -1,6 +1,6 @@
-# RxBridge — Healthcare Refill Coordination Platform
+# RxResolve — Healthcare Refill Coordination Platform
 
-RxBridge is an enterprise-grade healthcare refill coordination platform designed to bridge the operational divide between retail pharmacies, ambulatory care practices, attending providers, and patients. It replaces fragmented faxes, phone queues, and disconnected EHR inboxes with a centralized, real-time coordination workspace.
+RxResolve is an enterprise-grade healthcare refill coordination platform designed to bridge the operational divide between retail pharmacies, ambulatory care practices, attending providers, and patients. It replaces fragmented faxes, phone queues, and disconnected EHR inboxes with a centralized, real-time coordination workspace.
 
 ---
 
@@ -94,7 +94,7 @@ RxBridge is an enterprise-grade healthcare refill coordination platform designed
 1. **Clone the repository**:
    ```bash
    git clone <repository-url>
-   cd rxbridge
+   cd rxresolve
    ```
 
 2. **Install dependencies**:
@@ -131,7 +131,7 @@ RxBridge is an enterprise-grade healthcare refill coordination platform designed
 
 ## 👥 Personas & Role-Based Access Control
 
-RxBridge includes built-in persona switching to test clinical workflows across different perspectives:
+RxResolve includes built-in persona switching to test clinical workflows across different perspectives:
 
 1. **Elena Rostova, CPhT** (*Pharmacy Staff* — Metro Health Pharmacy)
    - Focused on submitting new refill requests, clarifying prescriptions, and tracking dispensed medications.
@@ -146,7 +146,7 @@ RxBridge includes built-in persona switching to test clinical workflows across d
 
 ## 🔒 Clinical Safety & Architectural Guardrails
 
-- **Assistive Workflow Automation**: RxBridge’s AI and triage services assist with operational classification, administrative communications, and queue management.
+- **Assistive Workflow Automation**: RxResolve’s AI and triage services assist with operational classification, administrative communications, and queue management.
 - **Clinician in the Loop**: Prescription approvals, denials, changes, and electronic signatures always require affirmative licensed clinician action.
 - **Simulated Privacy Safeguards**: Patient identifiers in the demo dataset are de-identified and simulated for training, validation, and testing environments.
 

@@ -205,7 +205,7 @@ export const SettingsView: React.FC = () => {
           Current Tenant: <span className="font-semibold text-slate-900">{currentUser.organizationName}</span> (ID: <span className="font-mono text-slate-700">{currentUser.organizationId}</span>).
         </p>
         <p className="text-[11px] text-slate-500">
-          RxBridge isolates organization data partitions cryptographically. Audit logging ensures non-repudiation across all clinical and administrative actions.
+          RxResolve isolates organization data partitions cryptographically. Audit logging ensures non-repudiation across all clinical and administrative actions.
         </p>
       </div>
     </div>

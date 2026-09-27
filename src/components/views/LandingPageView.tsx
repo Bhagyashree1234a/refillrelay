@@ -80,7 +80,7 @@ export const LandingPageView: React.FC<LandingPageViewProps> = ({
         </h1>
 
         <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto">
-          RxBridge helps pharmacy and practice teams identify, coordinate, and resolve prescription refills that require provider intervention.
+          RxResolve helps pharmacy and practice teams identify, coordinate, and resolve prescription refills that require provider intervention.
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
@@ -108,7 +108,7 @@ export const LandingPageView: React.FC<LandingPageViewProps> = ({
       {/* Visual Workflow Architecture */}
       <div className="bg-white border border-slate-200 rounded-xl p-8 shadow-xs">
         <div className="text-center max-w-xl mx-auto mb-8">
-          <h2 className="text-xl font-bold text-slate-900">The RxBridge Closed-Loop Workflow</h2>
+          <h2 className="text-xl font-bold text-slate-900">The RxResolve Closed-Loop Workflow</h2>
           <p className="text-xs text-slate-500 mt-1">
             Every stuck request follows one unified workflow with clear ownership and accountable resolution.
           </p>
@@ -167,7 +167,7 @@ export const LandingPageView: React.FC<LandingPageViewProps> = ({
         <div className="bg-slate-800/80 border border-slate-700 rounded-lg p-5 text-xs font-mono space-y-3">
           <div className="text-slate-400 pb-2 border-b border-slate-700 flex justify-between">
             <span>Inter-Professional Coordination</span>
-            <span className="text-teal-400">RxBridge Bus</span>
+            <span className="text-teal-400">RxResolve Bus</span>
           </div>
           <div className="text-slate-300">
             [09:12] Pharmacy transmits RF-10482 (0 Refills)

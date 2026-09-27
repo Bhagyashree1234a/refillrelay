@@ -114,7 +114,7 @@ export async function generateAiAssistance(
   try {
     const ai = new GoogleGenAI({ apiKey });
     const prompt = `
-You are an AI operational assistant in RxBridge, a healthcare refill coordination platform.
+You are an AI operational assistant in RxResolve, a healthcare refill coordination platform.
 CRITICAL SAFETY RULE: You do NOT make medical decisions, prescribe, diagnose, or approve medications.
 You only analyze workflow bottlenecks, summarize timeline logs, suggest operational routing, and draft administrative messages.
 

@@ -63,7 +63,7 @@ export const Logo: React.FC<LogoProps> = ({
               white ? 'text-white' : 'text-slate-900'
             }`}
           >
-            Rx<span className={white ? 'text-teal-300' : 'text-teal-600'}>Bridge</span>
+            Rx<span className={white ? 'text-teal-300' : 'text-teal-600'}>Resolve</span>
           </span>
         </div>
         {showTagline && (

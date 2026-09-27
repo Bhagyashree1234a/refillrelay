@@ -112,11 +112,16 @@ interface RefillContextType {
 
 const RefillContext = createContext<RefillContextType | undefined>(undefined);
 
-const STORAGE_KEY_PREFIX = 'rxbridge_data_v1';
+const STORAGE_KEY_PREFIX = 'rxresolve_data_v1';
+const LEGACY_STORAGE_KEY_PREFIX = 'rxbridge_data_v1';
+
+const getInitialStorage = (key: string): string | null => {
+  return localStorage.getItem(`${STORAGE_KEY_PREFIX}_${key}`) || localStorage.getItem(`${LEGACY_STORAGE_KEY_PREFIX}_${key}`);
+};
 
 export const RefillProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [currentUser, setCurrentUser] = useState<User>(() => {
-    const saved = localStorage.getItem(`${STORAGE_KEY_PREFIX}_user`);
+    const saved = getInitialStorage('user');
     return saved ? JSON.parse(saved) : DEMO_USERS[1]; // Default to Sarah Johnson (Practice Staff)
   });
 
@@ -125,37 +130,37 @@ export const RefillProvider: React.FC<{ children: ReactNode }> = ({ children }) 
   const [globalSearch, setGlobalSearch] = useState<string>('');
 
   const [refills, setRefills] = useState<RefillRequest[]>(() => {
-    const saved = localStorage.getItem(`${STORAGE_KEY_PREFIX}_refills`);
+    const saved = getInitialStorage('refills');
     return saved ? JSON.parse(saved) : DEMO_REFILLS;
   });
 
   const [timelineMap, setTimelineMap] = useState<Record<string, TimelineEvent[]>>(() => {
-    const saved = localStorage.getItem(`${STORAGE_KEY_PREFIX}_timeline`);
+    const saved = getInitialStorage('timeline');
     return saved ? JSON.parse(saved) : DEMO_TIMELINE;
   });
 
   const [messagesMap, setMessagesMap] = useState<Record<string, RefillMessage[]>>(() => {
-    const saved = localStorage.getItem(`${STORAGE_KEY_PREFIX}_messages`);
+    const saved = getInitialStorage('messages');
     return saved ? JSON.parse(saved) : DEMO_MESSAGES;
   });
 
   const [tasks, setTasks] = useState<Task[]>(() => {
-    const saved = localStorage.getItem(`${STORAGE_KEY_PREFIX}_tasks`);
+    const saved = getInitialStorage('tasks');
     return saved ? JSON.parse(saved) : DEMO_TASKS;
   });
 
   const [auditLogs, setAuditLogs] = useState<AuditEvent[]>(() => {
-    const saved = localStorage.getItem(`${STORAGE_KEY_PREFIX}_audit`);
+    const saved = getInitialStorage('audit');
     return saved ? JSON.parse(saved) : DEMO_AUDIT_LOG;
   });
 
   const [notifications, setNotifications] = useState<AppNotification[]>(() => {
-    const saved = localStorage.getItem(`${STORAGE_KEY_PREFIX}_notifications`);
+    const saved = getInitialStorage('notifications');
     return saved ? JSON.parse(saved) : DEMO_NOTIFICATIONS;
   });
 
   const [slaSettings, setSlaSettings] = useState<SLASettings>(() => {
-    const saved = localStorage.getItem(`${STORAGE_KEY_PREFIX}_sla`);
+    const saved = getInitialStorage('sla');
     return saved ? JSON.parse(saved) : DEFAULT_SLA_SETTINGS;
   });
 

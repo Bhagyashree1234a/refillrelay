@@ -76,7 +76,7 @@ export const AnalyticsView: React.FC = () => {
           <div className="text-3xl font-bold font-mono text-rose-700 tabular-nums">
             {escalationRate}%
           </div>
-          <div className="text-[11px] text-slate-500 mt-1">-3.8% since RxBridge rollout</div>
+          <div className="text-[11px] text-slate-500 mt-1">-3.8% since RxResolve rollout</div>
         </div>
       </div>
 
@@ -130,7 +130,7 @@ export const AnalyticsView: React.FC = () => {
               <div className="p-3 bg-teal-50/70 border border-teal-200/80 rounded-md">
                 <div className="font-bold text-teal-950 mb-0.5">Provider Reviews (14h)</div>
                 <p className="text-slate-700 leading-relaxed text-[11px]">
-                  Pre-attaching metabolic lab panels and home vitals in the RxBridge chart drawer enables providers to authorize 82% of requests on first open.
+                  Pre-attaching metabolic lab panels and home vitals in the RxResolve chart drawer enables providers to authorize 82% of requests on first open.
                 </p>
               </div>
 
